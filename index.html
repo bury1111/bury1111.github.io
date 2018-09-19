@@ -252,6 +252,163 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/19/sql插入测试/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bury">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/icon.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bury">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/19/sql插入测试/" itemprop="url">sql插入测试</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-19T17:14:22+08:00">
+                2018-09-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/09/19/sql插入测试/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/09/19/sql插入测试/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>功能</strong> ：测试sql server、oracle、mysql不同数据量下，1-300000条不同数据量的入库效率。</p>
+<p><strong>TSL.exe：</strong> 64位  <strong>DOS 执行 </strong> <strong> 时间单位：</strong>秒(S)  <strong>时间记录方式：</strong>mtic\mtoc</p>
+<p><strong>场景：</strong></p>
+<ol>
+<li>1、数据库：sql server、oracle、mysql</li>
+<li>2、模式：API、ADO</li>
+<li>3、入库数据级别：1-300000</li>
+<li>4、特殊字段：二进制</li>
+<li>5、插入方式：sql串拼接、tsl数组分批插入</li>
+</ol>
+<h4 id="批量拼接sql整串（-最大允许字符串长度-SQL-server：8000-个字符；-Mysql-默认-1M；Oracle：6000-个字符-）"><a href="#批量拼接sql整串（-最大允许字符串长度-SQL-server：8000-个字符；-Mysql-默认-1M；Oracle：6000-个字符-）" class="headerlink" title="批量拼接sql整串（ 最大允许字符串长度** SQL server：8000 个字符； Mysql 默认 1M；Oracle：6000 **个字符 ）"></a>批量拼接sql整串（ <strong>最大允许字符串长度**</strong> SQL server：8000 <strong><strong>个字符；</strong></strong> Mysql <strong><strong>默认</strong></strong> 1M；Oracle：6000 <strong>**个字符</strong> ）</h4><ul>
+<li>拼接方式：insert into table(field1,field2) values(v1,v2);insert into table(field1,field2) values(v1,v2);……</li>
+</ul>
+<h4 id="批量拼接sql-value值-最大允许字符串长度-SQL-server：8000个字符；Mysql默认1M；Oracle：不支持这种写法；最大允许values的项数：1000"><a href="#批量拼接sql-value值-最大允许字符串长度-SQL-server：8000个字符；Mysql默认1M；Oracle：不支持这种写法；最大允许values的项数：1000" class="headerlink" title="批量拼接sql value值(最大允许字符串长度: SQL server：8000个字符；Mysql默认1M；Oracle：不支持这种写法；最大允许values的项数：1000)"></a>批量拼接sql value值(最大允许字符串长度: SQL server：8000个字符；Mysql默认1M；Oracle：不支持这种写法；最大允许values的项数：1000)</h4><ul>
+<li>拼接方式：insert into table(field1,fied2) values(v1,v2),(v1,v2),(v1,v2)……</li>
+</ul>
+<p>测试使用插入语句</p>
+<p>insert into test_sqlserver(id,name,c1,c2,c3,c4,c5,c6,c8,c9) values(1,&#39;&quot;$random()$&quot;xx业务界面&#39;,&#39;12&#39;,&#39;342&#39;,&#39;2048&#39;,&#39;2018-08-21 14:51:20.000&#39;,&#39;2018-08-28 14:00:00.000&#39;,&#39;bury&#39;,&#39;测试插入&#39;,&#39;测试插入&#39;);</p>
+<p>得出结论：三种数据库，sql server的插入效率要高一些；</p>
+<ol>
+<li>无索引，无二进制数据的情况下推荐使用 API模式下的Execsql方式中批量拼接sql value的方法进行批量插入；</li>
+<li>无索引，有二进制数据的情况下推荐使用API模式下的TSL方式进行批量插入；</li>
+<li>有索引，无二进制数据的情况下推荐使用API模式下的Execsql方式中批量拼接sql value的方法进行批量插入；</li>
+<li>有索引，有二进制数据的情况下推荐使用API模式下的TSL方式进行批量插入；</li>
+</ol>
+<p>测试数据表如下表所示：<br><img src="/img/t1.png" alt=""><br><img src="/img/t2.png" alt=""><br><img src="/img/t3.png" alt=""><br><img src="/img/t4.png" alt=""><br><img src="/img/t5.png" alt=""><br><img src="/img/t6.png" alt=""></p>
+<p>使用sql server ADO模式下的execsql方式中批量拼接sql value值的方法速度较快，顺便测试了下三百万行的效率：如下图所示；<br><img src="/img/t7.png" alt=""></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/19/hexo新建文章部署常用命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1232,7 +1389,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
