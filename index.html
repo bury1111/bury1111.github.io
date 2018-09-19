@@ -252,6 +252,142 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/19/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bury">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/icon.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bury">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/19/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-19T17:31:23+08:00">
+                2018-09-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/09/19/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/09/19/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/19/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/19/sql插入测试/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -294,6 +430,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/修行之路/" itemprop="url" rel="index">
+                    <span itemprop="name">修行之路</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -333,36 +491,19 @@
 
       
         
-          
-            <p><strong>功能</strong> ：测试sql server、oracle、mysql不同数据量下，1-300000条不同数据量的入库效率。</p>
+          <p><strong>功能</strong> ：测试sql server、oracle、mysql不同数据量下，1-300000条不同数据量的入库效率。</p>
 <p><strong>TSL.exe：</strong> 64位  <strong>DOS 执行 </strong> <strong> 时间单位：</strong>秒(S)  <strong>时间记录方式：</strong>mtic\mtoc</p>
 <p><strong>场景：</strong></p>
 <ol>
 <li>1、数据库：sql server、oracle、mysql</li>
-<li>2、模式：API、ADO</li>
-<li>3、入库数据级别：1-300000</li>
-<li>4、特殊字段：二进制</li>
-<li>5、插入方式：sql串拼接、tsl数组分批插入</li>
-</ol>
-<h4 id="批量拼接sql整串（-最大允许字符串长度-SQL-server：8000-个字符；-Mysql-默认-1M；Oracle：6000-个字符-）"><a href="#批量拼接sql整串（-最大允许字符串长度-SQL-server：8000-个字符；-Mysql-默认-1M；Oracle：6000-个字符-）" class="headerlink" title="批量拼接sql整串（ 最大允许字符串长度** SQL server：8000 个字符； Mysql 默认 1M；Oracle：6000 **个字符 ）"></a>批量拼接sql整串（ <strong>最大允许字符串长度**</strong> SQL server：8000 <strong><strong>个字符；</strong></strong> Mysql <strong><strong>默认</strong></strong> 1M；Oracle：6000 <strong>**个字符</strong> ）</h4><ul>
-<li>拼接方式：insert into table(field1,field2) values(v1,v2);insert into table(field1,field2) values(v1,v2);……</li>
-</ul>
-<h4 id="批量拼接sql-value值-最大允许字符串长度-SQL-server：8000个字符；Mysql默认1M；Oracle：不支持这种写法；最大允许values的项数：1000"><a href="#批量拼接sql-value值-最大允许字符串长度-SQL-server：8000个字符；Mysql默认1M；Oracle：不支持这种写法；最大允许values的项数：1000" class="headerlink" title="批量拼接sql value值(最大允许字符串长度: SQL server：8000个字符；Mysql默认1M；Oracle：不支持这种写法；最大允许values的项数：1000)"></a>批量拼接sql value值(最大允许字符串长度: SQL server：8000个字符；Mysql默认1M；Oracle：不支持这种写法；最大允许values的项数：1000)</h4><ul>
-<li>拼接方式：insert into table(field1,fied2) values(v1,v2),(v1,v2),(v1,v2)……</li>
-</ul>
-<p>测试使用插入语句</p>
-<p>insert into test_sqlserver(id,name,c1,c2,c3,c4,c5,c6,c8,c9) values(1,&#39;&quot;$random()$&quot;xx业务界面&#39;,&#39;12&#39;,&#39;342&#39;,&#39;2048&#39;,&#39;2018-08-21 14:51:20.000&#39;,&#39;2018-08-28 14:00:00.000&#39;,&#39;bury&#39;,&#39;测试插入&#39;,&#39;测试插入&#39;);</p>
-<p>得出结论：三种数据库，sql server的插入效率要高一些；</p>
-<ol>
-<li>无索引，无二进制数据的情况下推荐使用 API模式下的Execsql方式中批量拼接sql value的方法进行批量插入；</li>
-<li>无索引，有二进制数据的情况下推荐使用API模式下的TSL方式进行批量插入；</li>
-<li>有索引，无二进制数据的情况下推荐使用API模式下的Execsql方式中批量拼接sql value的方法进行批量插入；</li>
-<li>有索引，有二进制数据的情况下推荐使用API模式下的TSL方式进行批量插入；</li>
-</ol>
-<p>测试数据表如下表所示：<br><img src="/img/t1.png" alt=""><br><img src="/img/t2.png" alt=""><br><img src="/img/t3.png" alt=""><br><img src="/img/t4.png" alt=""><br><img src="/img/t5.png" alt=""><br><img src="/img/t6.png" alt=""></p>
-<p>使用sql server ADO模式下的execsql方式中批量拼接sql value值的方法速度较快，顺便测试了下三百万行的效率：如下图所示；<br><img src="/img/t7.png" alt=""></p>
-
-          
+<li>2、模式：API、ADO
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/19/sql插入测试/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -512,45 +653,15 @@
 
       
         
-          
-            <h6 id="常用命令顺序-hexo-new-“”；hexo-s；hexo-clean；-hexo-g-；hexo-d；"><a href="#常用命令顺序-hexo-new-“”；hexo-s；hexo-clean；-hexo-g-；hexo-d；" class="headerlink" title="常用命令顺序 hexo new “”；hexo s；hexo clean； hexo g ；hexo d；"></a>常用命令顺序 hexo new “”；hexo s；hexo clean； hexo g ；hexo d；</h6><h3 id="hexo-s"><a href="#hexo-s" class="headerlink" title="hexo s"></a>hexo s</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>启动本地服务器，用于预览主题。默认地址： <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
-<ul>
-<li>hexo s 是 hexo server 的缩写，命令效果一致；</li>
-<li>预览的同时可以修改文章内容或主题代码，保存后刷新页面即可；</li>
-<li>对 Hexo 根目录 _config.yml 的修改，需要重启本地服务器后才能预览效果。</li>
-</ul>
-<h3 id="hexo-new"><a href="#hexo-new" class="headerlink" title="hexo new"></a>hexo new</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;学习笔记  六&quot;</span><br></pre></td></tr></table></figure>
-<p>新建一篇标题为 学习笔记 六 的文章，因为标题里有空格，所以加上了引号。</p>
-<ul>
-<li>文章标题可以在对应 md 文件里改，新建时标题可以写的简单些。</li>
-</ul>
-<h3 id="hexo-d"><a href="#hexo-d" class="headerlink" title="hexo d"></a>hexo d</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>自动生成网站静态文件，并部署到设定的仓库。</p>
-<ul>
-<li>hexo d 是 hexo deploy 的缩写，命令效果一致。</li>
-</ul>
-<h3 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="hexo clean"></a>hexo clean</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-<p>清除缓存文件 db.json 和已生成的静态文件 public 。</p>
-<ul>
-<li>网站显示异常时可以执行这条命令试试。</li>
-</ul>
-<h3 id="hexo-g"><a href="#hexo-g" class="headerlink" title="hexo g"></a>hexo g</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-<p>生成网站静态文件到默认设置的 public 文件夹。</p>
-<ul>
-<li>便于查看网站生成的静态文件或者手动部署网站；</li>
-<li>如果使用自动部署，不需要先执行该命令；</li>
-<li>hexo g 是 hexo generate 的缩写，命令效果一致。</li>
-</ul>
-<h3 id="hexo-new-page"><a href="#hexo-new-page" class="headerlink" title="hexo new page"></a>hexo new page</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page aboutme</span><br></pre></td></tr></table></figure>
-<p>新建一个标题为 aboutme 的页面，默认链接地址为 主页地址/aboutme/</p>
-<ul>
-<li>标题可以为中文，但一般习惯用英文；</li>
-<li>页面标题和文章一样可以随意修改；</li>
-<li>页面不会出现在首页文章列表和归档中，也不支持设置分类和标签。</li>
-</ul>
-
-          
+          <h6 id="常用命令顺序-hexo-new-“”；hexo-s；hexo-clean；-hexo-g-；hexo-d；"><a href="#常用命令顺序-hexo-new-“”；hexo-s；hexo-clean；-hexo-g-；hexo-d；" class="headerlink" title="常用命令顺序 hexo new “”；hexo s；hexo clean； hexo g ；hexo d；"></a>常用命令顺序 hexo new “”；hexo s；hexo clean； hexo g ；hexo d；</h6><h3 id="hexo-s"><a href="#hexo-s" class="headerlink" title="hexo s"></a>hexo s</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>启动本地服务器，用于预览主题。默认地址： <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/19/hexo新建文章部署常用命令/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -700,15 +811,14 @@
 
       
         
-          
-            <p> &emsp;&emsp;两周的时间写一个二叉树图形的任务，使用echarts；从未使用过的我一脸蒙蔽。只好乖乖去看官方文档，从头开始⾿<br> &emsp;&emsp;最后的成果，可以根据模型数据动态生成节点和连接线：<br>  <img src="/img/img3.png" alt="aa"><br>模型数据结构如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">data :=array(</span><br><span class="line">(&quot;id&quot;:&quot;0&quot;,&quot;pid&quot;:&quot;0&quot;,&quot;title&quot;:&quot;Total&quot;,&quot;na&quot;:&quot;13.60&quot;,&quot;value&quot;:&apos;N/A&apos;),</span><br><span class="line">(&quot;id&quot;:&quot;1&quot;,&quot;pid&quot;:&quot;0&quot;,&quot;title&quot;:&quot;Benchmark&quot;,&quot;na&quot;:&quot;12.41&quot;,&quot;value&quot;:&apos;N/A&apos;),</span><br><span class="line">(&quot;id&quot;:&quot;2&quot;,&quot;pid&quot;:&quot;0&quot;,&quot;title&quot;:&quot;Active&quot;,&quot;na&quot;:&quot;4.65&quot;,&quot;value&quot;:100.00),</span><br><span class="line">(&quot;id&quot;:&quot;3&quot;,&quot;pid&quot;:&quot;2&quot;,&quot;title&quot;:&quot;Market Timing&quot;,&quot;na&quot;:&quot;0.00&quot;,&quot;value&quot;:0.00),</span><br><span class="line">(&quot;id&quot;:&quot;4&quot;,&quot;pid&quot;:&quot;2&quot;,&quot;title&quot;:&quot;Common Factor&quot;,&quot;na&quot;:&quot;2.97&quot;,&quot;value&quot;:40.82),</span><br><span class="line">(&quot;id&quot;:&quot;5&quot;,&quot;pid&quot;:&quot;2&quot;,&quot;title&quot;:&quot;Asset Selectior&quot;,&quot;na&quot;:&quot;3.58&quot;,&quot;value&quot;:59.18),</span><br><span class="line">(&quot;id&quot;:&quot;6&quot;,&quot;pid&quot;:&quot;4&quot;,&quot;title&quot;:&quot;Risk Indices&quot;,&quot;na&quot;:&quot;2.37&quot;,&quot;value&quot;:25.91),</span><br><span class="line">(&quot;id&quot;:&quot;7&quot;,&quot;pid&quot;:&quot;4&quot;,&quot;title&quot;:&quot;Industries&quot;,&quot;na&quot;:&quot;1.71&quot;,&quot;value&quot;:13.60),</span><br><span class="line">(&quot;id&quot;:&quot;8&quot;,&quot;pid&quot;:&quot;4&quot;,&quot;title&quot;:&quot;Market Equity&quot;,&quot;na&quot;:&quot;0.10&quot;,&quot;value&quot;:0.04),</span><br><span class="line">(&quot;id&quot;:&quot;9&quot;,&quot;pid&quot;:&quot;4&quot;,&quot;title&quot;:&quot;Covariance*2&quot;,&quot;na&quot;:&quot;N/A&quot;,&quot;value&quot;:1.26),</span><br><span class="line">(&quot;id&quot;:&quot;10&quot;,&quot;pid&quot;:&quot;7&quot;,&quot;title&quot;:&quot;Covariance*2&quot;,&quot;na&quot;:&quot;测试&quot;,&quot;value&quot;:1.26),</span><br><span class="line">(&quot;id&quot;:&quot;11&quot;,&quot;pid&quot;:&quot;7&quot;,&quot;title&quot;:&quot;Covariance*2&quot;,&quot;na&quot;:&quot;测试&quot;,&quot;value&quot;:1.26));</span><br><span class="line"></span><br><span class="line">conf:=array(</span><br><span class="line">          &quot;width&quot;:800,</span><br><span class="line">          &quot;height&quot;:600,</span><br><span class="line">          &quot;legend_title1&quot;:&quot;Risk(%Std Dev)&quot;,</span><br><span class="line">          &quot;legend_title2&quot;:&quot;Contribution(%Active Risk)&quot;,</span><br><span class="line">          &quot;title&quot;:&quot;二叉树图形测试&quot;);</span><br></pre></td></tr></table></figure></p>
-<p> id是唯一标识，pid是父节点标识，title，na，value都是可自定义节点属性；<br> &emsp;&emsp; js代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br></pre></td><td class="code"><pre><span class="line">function getEchartsData(data,links,tmp_h,par)&#123;</span><br><span class="line">  var mycharts = echarts.init($(&apos;.echarts&apos;)[0]);</span><br><span class="line">  //var root_x = data[0].x;</span><br><span class="line">  //var root_y = data[0].y+80;</span><br><span class="line">  var h = tmp_h/10;</span><br><span class="line">  console.log(par);</span><br><span class="line">  console.log(data);</span><br><span class="line">  console.log(par.length+1);</span><br><span class="line">  var tmp=par.length+1;</span><br><span class="line">  //将对应子节点上方隐藏节点push到数组中</span><br><span class="line">  for(i=0;i&lt;data.length;i++)&#123;</span><br><span class="line">  par.push(&#123;p_x:data[i][&apos;p_x&apos;],</span><br><span class="line">            p_y:data[i][&apos;p_y&apos;],</span><br><span class="line">            n_name:data[i][&apos;n_name&apos;],</span><br><span class="line">            level:data[i][&apos;level&apos;]</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  console.log(par);</span><br><span class="line">  //绘制隐藏连线节点</span><br><span class="line">  for(i=0;i&lt;par.length;i++)&#123;</span><br><span class="line">  data.push(&#123;</span><br><span class="line">      x: data[par[i][&apos;p_x&apos;]].x,</span><br><span class="line">      y: data[par[i][&apos;p_y&apos;]].y+60,</span><br><span class="line">      itemStyle: &#123;</span><br><span class="line">          normal: &#123;</span><br><span class="line">              opacity: 0</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;,</span><br><span class="line">      name: par[i][&apos;n_name&apos;]</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">  //节点连线</span><br><span class="line">  var links = [];</span><br><span class="line">  //原数据节点连接隐藏节点</span><br><span class="line">  for(i=0;i&lt;par.length;i++)&#123;</span><br><span class="line">    links.push(&#123;</span><br><span class="line">        source: par[i][&apos;p_x&apos;],</span><br><span class="line">        target: par[i][&apos;n_name&apos;]</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  //循环连接同级隐藏节点</span><br><span class="line"> for(j=1;j&lt;=tmp;j++)&#123;</span><br><span class="line">   var flag =[];</span><br><span class="line">   var k=0;</span><br><span class="line"> for(i=0;i&lt;par.length;i++)&#123;</span><br><span class="line"></span><br><span class="line">   if(par[i][&apos;level&apos;]==j)&#123;</span><br><span class="line">     flag[k]=par[i][&apos;n_name&apos;];</span><br><span class="line">     k++;</span><br><span class="line">   &#125;</span><br><span class="line">   //console.log(flag);</span><br><span class="line"> &#125;</span><br><span class="line"> for(i=0;i&lt;k;i++)&#123;</span><br><span class="line"> links.push(&#123;</span><br><span class="line">     source: flag[i],</span><br><span class="line">     target: flag[i+1]</span><br><span class="line"> &#125;);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  //绘制主图形结构</span><br><span class="line">  var option = &#123;</span><br><span class="line">    title:&#123;</span><br><span class="line">      text:&apos;二叉树关系图&apos;,</span><br><span class="line">    &#125;,</span><br><span class="line">    legend: &#123;</span><br><span class="line">        type:&apos;plain&apos;,</span><br><span class="line">        right:0,</span><br><span class="line">        data:[&apos;name&apos;,&apos;value&apos;],</span><br><span class="line"></span><br><span class="line">    &#125;,</span><br><span class="line">    animationDurationUpdate: 1500,</span><br><span class="line">    animationEasingUpdate: &apos;quinticInOut&apos;,</span><br><span class="line">    series : [</span><br><span class="line"></span><br><span class="line">          //title模块</span><br><span class="line">          &#123;</span><br><span class="line">           name:&apos;title&apos;,</span><br><span class="line">           type:&apos;graph&apos;,</span><br><span class="line">           symbol: &apos;Rect&apos;,</span><br><span class="line">           symbolSize:0.001,</span><br><span class="line">           symbolOffset:[15,-20],</span><br><span class="line">           itemStyle:&#123;</span><br><span class="line">               normal:&#123;</span><br><span class="line"></span><br><span class="line">                   opacity:1,</span><br><span class="line">                 &#125;,</span><br><span class="line">           &#125;,</span><br><span class="line">           label: &#123;</span><br><span class="line">             normal: &#123;</span><br><span class="line">               show: true,</span><br><span class="line">               position: &apos;insideRight&apos;,</span><br><span class="line">               formatter: function (param) &#123;</span><br><span class="line">                 return param.data.title;</span><br><span class="line">               &#125;,</span><br><span class="line">               textStyle: &#123;</span><br><span class="line">                 color: &apos;#000&apos;,</span><br><span class="line">                 fontSize: 13,</span><br><span class="line">                 lineHeight: 10,</span><br><span class="line">                 height: 10,</span><br><span class="line">                 padding: 0</span><br><span class="line">               &#125;,</span><br><span class="line">             &#125;</span><br><span class="line">           &#125;,</span><br><span class="line">           data: data,</span><br><span class="line">       &#125;,</span><br><span class="line">       //name模块</span><br><span class="line">      &#123;</span><br><span class="line">        name:&apos;name&apos;,</span><br><span class="line">        type: &apos;graph&apos;,</span><br><span class="line">        layout: &apos;none&apos;,</span><br><span class="line">        symbolSize: 50,</span><br><span class="line">        roam: false,</span><br><span class="line">        focusNodeAdjacency: false,</span><br><span class="line">        symbol: &apos;Rect&apos;,</span><br><span class="line">        symbolSize: [80, 20],</span><br><span class="line">        itemStyle:&#123;</span><br><span class="line">            normal:&#123;</span><br><span class="line">                color:&apos;#FB966E&apos;,</span><br><span class="line">                borderColor:&quot;#000&quot;,         //边框颜色</span><br><span class="line">                borderWidth:0,              //柱条的描边宽度，默认不描边。</span><br><span class="line">                borderType:&quot;solid&quot;,         //柱条的描边类型，默认为实线，支持 &apos;dashed&apos;, &apos;dotted&apos;。</span><br><span class="line">                barBorderRadius:0,          //柱形边框圆角半径，单位px，支持传入数组分别指定柱形4个圆角半径。</span><br><span class="line">                shadowBlur:1,              //图形阴影的模糊大小。</span><br><span class="line">                shadowColor:&quot;#000&quot;,         //阴影颜色</span><br><span class="line">                shadowOffsetX:0,            //阴影水平方向上的偏移距离。</span><br><span class="line">                shadowOffsetY:0,            //阴影垂直方向上的偏移距离。</span><br><span class="line">                opacity:1,</span><br><span class="line">              &#125;,</span><br><span class="line">        &#125;,</span><br><span class="line">        //数据</span><br><span class="line">        label: &#123;</span><br><span class="line">          normal: &#123;</span><br><span class="line">            show: true,</span><br><span class="line">            position: &apos;insideRight&apos;,</span><br><span class="line"></span><br><span class="line">            //offset: [0, -10],</span><br><span class="line">            //backgroundColor: &apos;yellow&apos;,</span><br><span class="line">            formatter: function (param) &#123;</span><br><span class="line">              return param.data.na;//param.data.title+&quot;\r\r\r\r\r&quot;+&quot;\n&quot;+param.data.name;</span><br><span class="line">            &#125;,</span><br><span class="line">            textStyle: &#123;</span><br><span class="line">              color: &apos;#000&apos;,</span><br><span class="line">              fontSize: 13,</span><br><span class="line">              lineHeight: 10,</span><br><span class="line">              height: 10,</span><br><span class="line">              padding: 0</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        data: data,</span><br><span class="line">        links: links,</span><br><span class="line">        lineStyle: &#123;</span><br><span class="line">            normal: &#123;</span><br><span class="line">              //curveness:0.42,</span><br><span class="line">              shadowColor: &apos;rgba(0, 0, 0, 0.5)&apos;,</span><br><span class="line">              shadowBlur: 4,</span><br><span class="line">              opacity: 0.9,</span><br><span class="line">              width: 1,</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;,</span><br><span class="line">        //value模块</span><br><span class="line">        &#123;</span><br><span class="line">        name:&apos;value&apos;,</span><br><span class="line">        type: &apos;graph&apos;,</span><br><span class="line">        layout: &apos;none&apos;,</span><br><span class="line">        symbolSize: 50,</span><br><span class="line">        roam: false,</span><br><span class="line">        focusNodeAdjacency: false,</span><br><span class="line">        symbol: &apos;Rect&apos;,</span><br><span class="line">        symbolSize: [80, 20],</span><br><span class="line">        symbolOffset:[0,20],</span><br><span class="line">        itemStyle:&#123;</span><br><span class="line">            normal:&#123;</span><br><span class="line">                color:&apos;#58B2DC&apos;,</span><br><span class="line">                borderColor:&quot;#000&quot;,</span><br><span class="line">                borderWidth:0,</span><br><span class="line">                borderType:&quot;solid&quot;,</span><br><span class="line">                barBorderRadius:0,</span><br><span class="line">                shadowBlur:4,</span><br><span class="line">                shadowColor:&quot;#000&quot;,</span><br><span class="line">                shadowOffsetX:0,</span><br><span class="line">                shadowOffsetY:0,</span><br><span class="line">                opacity:1,</span><br><span class="line">              &#125;,</span><br><span class="line">        &#125;,</span><br><span class="line">        //数据</span><br><span class="line">        label: &#123;</span><br><span class="line">          normal: &#123;</span><br><span class="line">            show: true,</span><br><span class="line">            position: &apos;insideRight&apos;,</span><br><span class="line">            //offset: [-42, 0],</span><br><span class="line">            //backgroundColor: &apos;yellow&apos;,</span><br><span class="line">            formatter: function (param) &#123;</span><br><span class="line">              return param.data.value;</span><br><span class="line">            &#125;,</span><br><span class="line">            textStyle: &#123;</span><br><span class="line">              color: &apos;#000&apos;,</span><br><span class="line">              fontSize: 13,</span><br><span class="line">              lineHeight: 10,</span><br><span class="line">              height: 10,</span><br><span class="line">              padding: 0</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        data: data,</span><br><span class="line"></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  //console.log(links);</span><br><span class="line">  mycharts.setOption(option);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h5 id="使用循环根据传过来的数组下标来绘制隐藏节点达成所需线条折线形式"><a href="#使用循环根据传过来的数组下标来绘制隐藏节点达成所需线条折线形式" class="headerlink" title="使用循环根据传过来的数组下标来绘制隐藏节点达成所需线条折线形式"></a>使用循环根据传过来的数组下标来绘制隐藏节点达成所需线条折线形式</h5><h5 id="节点间的连线分两步，"><a href="#节点间的连线分两步，" class="headerlink" title="节点间的连线分两步，"></a>节点间的连线分两步，</h5><h5 id="0-原数据节点与隐藏节点建立连线"><a href="#0-原数据节点与隐藏节点建立连线" class="headerlink" title="0.原数据节点与隐藏节点建立连线"></a>0.原数据节点与隐藏节点建立连线</h5><pre><code>links.push({
-    source: 原数据节点name值,
-    target: 隐藏节点name值
-});                            
-</code></pre><h5 id="1-隐藏节点同级间建立连线"><a href="#1-隐藏节点同级间建立连线" class="headerlink" title="1.隐藏节点同级间建立连线"></a>1.隐藏节点同级间建立连线</h5><h5 id="需要重组隐藏节点数据，在其中加入level属性，使其到达分行效果通过循环判断实现（data是传进来的原数据，par是重组的隐藏节点数据）代码见js"><a href="#需要重组隐藏节点数据，在其中加入level属性，使其到达分行效果通过循环判断实现（data是传进来的原数据，par是重组的隐藏节点数据）代码见js" class="headerlink" title="需要重组隐藏节点数据，在其中加入level属性，使其到达分行效果通过循环判断实现（data是传进来的原数据，par是重组的隐藏节点数据）代码见js"></a>需要重组隐藏节点数据，在其中加入level属性，使其到达分行效果通过循环判断实现（data是传进来的原数据，par是重组的隐藏节点数据）代码见js</h5>
-          
+          <p> &emsp;&emsp;两周的时间写一个二叉树图形的任务，使用echarts；从未使用过的我一脸蒙蔽。只好乖乖去看官方文档，从头开始⾿<br> &emsp;&emsp;最后的成果，可以根据模型数据动态生成节点和连接线：<br>  <img src="/img/img3.png" alt="aa"><br>模型数据结构如下：
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/19/被echarts折磨的一周/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1010,11 +1120,14 @@
 
       
         
-          
-            <p> &emsp;&emsp;  windows下.py编码是dos的,想在Linux下运行需要转成unix的（使用UE进行转码）~ 在本地敲python代码，敲完后再拿到虚拟机Linux环境下去执行遇到 bash: ./filename.py: /usr/bin/python^M: 解释器错误: 没有那个文件或目录问题<br> &emsp;&emsp;首先要配置python路径写上#!/usr/bin/python   (路径查询使用which python 命令)<br> <img src="/img/img1.png" alt="aa"></p>
-<p> &emsp;&emsp;第二行的#coding=utf-8是中文编码问题，不写会导致中文报错<br> &emsp;&emsp;成功在Linux下运行写的dispose_file.py<br><img src="/img/img2.png" alt="bb"></p>
-
-          
+          <p> &emsp;&emsp;  windows下.py编码是dos的,想在Linux下运行需要转成unix的（使用UE进行转码）~ 在本地敲python代码，敲完后再拿到虚拟机Linux环境下去执行遇到 bash: ./filename.py: /usr/bin/python^M: 解释器错误: 没有那个文件或目录问题<br> &emsp;&emsp;首先要配置python路径写上#!/usr/bin/python   (路径查询使用which python 命令)
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/05/py在Linux下运行的问题/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1200,145 +1313,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/05/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bury">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/icon.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bury">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/05/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-05T09:22:48+08:00">
-                2018-09-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/09/05/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/09/05/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1411,7 +1385,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
