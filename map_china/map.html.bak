@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="echarts.min.js"></script>
+    <script src="china.js"></script>
+  </head>
+  <body>
+  <h2>map</h2><div id = "china_map" style="width:1200px;height:790px"></div>
+  <script type="text/javascript" src="test02.js"></script>
+    
+  </body>
+  </body>
+</html>
